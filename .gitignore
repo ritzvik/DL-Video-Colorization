@@ -2,8 +2,10 @@
 _scratchpad
 
 # project specifics
-train_videos
+train_videos/
 train_videos.txt
+frames/*/*.jpg
+models/
 
 # Compiled files
 *.py[cod]
