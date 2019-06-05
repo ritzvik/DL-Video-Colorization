@@ -1,6 +1,9 @@
 # folder for testing and miscellaneous activities
 _scratchpad
 
+# project specifics
+train_videos
+train_videos.txt
 
 # Compiled files
 *.py[cod]
