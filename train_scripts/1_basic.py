@@ -14,11 +14,11 @@ from keras import backend as K
 import numpy as np
 import scipy
 import matplotlib
-import matplotlib.pyplot as plt
 import cv2
 K.set_image_data_format('channels_last')
 
 matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 
 
 print('\n\n\n------------IMPORTS DONE----------\n\n\n')
