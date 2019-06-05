@@ -11,10 +11,6 @@ framepath = 'frames/'
 vidfiles = [f for f in listdir(vidpath) if os.path.isfile(os.path.join(vidpath, f))]
 print(vidfiles)
 
-with open('train_videos.txt','w') as fileptr:
-    for vidfile in vidfiles:
-        fileptr.write(vidfile+'\n')
-
 def frameExtractor(filename):
     print('\n\n',filename,'\n\n')
     ##
@@ -31,6 +27,10 @@ def frameExtractor(filename):
         count += 1
         if count%1000==0:
             print(count)
+
+    fileptr = open('train_videos.txt','a')
+    fileptr.write(filename+'\n')
+    fileptr.close()
 
     return count
 
