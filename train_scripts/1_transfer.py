@@ -86,7 +86,7 @@ def generator(batchsize, divs, divpart, rseed=69):
                     outlist.append(im0)
                 except cv2.error:
                     print('\nCV2 Exception Raised.....ignoring..')
-                    print(fpath,'\n')
+                    print(f0,'\n')
             if len(inplist)==0:
                 continue
             inplist, outlist = np.array(inplist)/255.0, np.array(outlist)/255.0
