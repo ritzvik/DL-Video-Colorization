@@ -10,5 +10,6 @@
 
 ### Steps to test 
 
-   - Put a `640 X 360` video inside `test_videos` named `testvid1.mp4`. Ultimately, the file should be `test_videos/testvid1.mp4`.
-   - To run prediction of basic model, run `python3 test_scripts/test.py models/1_basic.h5`. The predictions would be created in `models/1_basic.h5d`.
+  - Put a `640 X 360` video inside `test_videos` named `testvid1.mp4`. Ultimately, the file should be `test_videos/testvid1.mp4`.
+  - To run prediction of basic model, run `python3 test_scripts/test.py models/1_basic.h5`. The predictions would be created in `models/1_basic.h5d/`.
+  - To run the prediction of other models, run `python3 test_scripts/test_final.py models.1_transfer*.h5`. The predictions would be created in `models/1_transfer*.hd5/`
