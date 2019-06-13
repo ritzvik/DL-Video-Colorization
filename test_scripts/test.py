@@ -32,10 +32,9 @@ gt = np.array(gt)
 preds = np.copy(gt)
 abc = preds
 
-for i in range(2,len(gt)):
+for i in range(len(gt)):
     if i%20==0: print(i)
-    gr = gt[i-2:i+1]
-    abc = gr[2]
+    abc = gt[i]
     gray = cv2.cvtColor((abc*255.0).astype(np.uint8), cv2.COLOR_BGR2GRAY)/255.0
     # inpu = np.stack((preds[i-2][:,:,0],preds[i-2][:,:,1],preds[i-2][:,:,2],preds[i-1][:,:,0],preds[i-1][:,:,1],preds[i-1][:,:,2],gray), axis=-1)
     inpu_1 = gray.reshape((360, 640, 1))
